@@ -20,7 +20,7 @@ function mouseMoveu(){
 
 function mouseClickDireitoBtn(){
     console.log("Foi cliclado o Botão deireito do Mouse")
-    //para não abri o meu do navegador
+    //para não abri o menu do navegador
     return false
 }
 

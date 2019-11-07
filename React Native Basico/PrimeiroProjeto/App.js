@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
 
 export default class PrimeiroProjeto extends Component {
 
   constructor(props){
     super(props);
-    this.state = {texto: ''};
+    this.state = {inputTexto: '' ,texto:''}
 
-    this.mudarTexto = this.mudarTexto.bind(this);
+    this.apertouBotao = this.apertouBotao.bind(this);
   }
 
-  mudarTexto(t){
+  apertouBotao(){
     let s = this.state;
-    s.texto = t.length > 0 ? s.texto = 'Olá, '+t : '';  
-    //s.texto = 'Olá, '+t;
+    
+    if(s.inputTexto == "Wallison"){
+      s.texto = "Acertou!"
+    }else{
+      s.texto = "Erro!"
+    }
 
     this.setState(s);
+
   }
 
   render(){
     return (
       <View style={{paddingTop:30}}>
-        <TextInput style={styles.input} placeholder="Qual seu nome?" onChangeText={this.mudarTexto}/>
+        <TextInput style={styles.input} placeholder="Qial seu nome?"
+          onChangeText={(inputTexto) => this.setState({inputTexto})}/>
 
+        <Button title="Aperte em mim" onPress={this.apertouBotao}/>
         <Text style={styles.texto}>{this.state.texto}</Text>
       </View>
 

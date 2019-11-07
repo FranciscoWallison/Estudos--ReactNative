@@ -1,25 +1,45 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TextInput } from 'react-native';
 
 export default class PrimeiroProjeto extends Component {
 
+  constructor(props){
+    super(props);
+    this.state = {texto: ''};
+
+    this.mudarTexto = this.mudarTexto.bind(this);
+  }
+
+  mudarTexto(t){
+    let s = this.state;
+    s.texto = t.length > 0 ? s.texto = 'Olá, '+t : '';  
+    //s.texto = 'Olá, '+t;
+
+    this.setState(s);
+  }
+
   render(){
-
     return (
-      <View style={{ flex:1, backgroundColor:'green'}}>        
-        {/* <View style={{ width:50, height:50, backgroundColor:'blue' }}></View>
-        <View style={{ width:100, height:100, backgroundColor:'green' }}></View>
-        <View style={{ width:200, height:200, backgroundColor:'red' }}></View> */}
-        
-        {/* <Text>Este é um texto qualquer</Text> */}
+      <View style={{paddingTop:30}}>
+        <TextInput style={styles.input} placeholder="Qual seu nome?" onChangeText={this.mudarTexto}/>
 
-        
-        <View style={{ height:70, backgroundColor:'green' }}></View>
-        <View style={{ flex:1, backgroundColor:'yellow' }}></View>
-        <View style={{ height:50, backgroundColor:'red' }}></View>
-
+        <Text style={styles.texto}>{this.state.texto}</Text>
       </View>
 
     ); 
   }
 }
+
+const styles = StyleSheet.create({
+  input: {
+    height:40,
+    borderWidth:1,
+    borderColor: '#000000',
+    margin:10,
+    padding:10
+  },
+  texto: {
+    fontSize: 20,
+    textAlign: 'center'
+  }
+});

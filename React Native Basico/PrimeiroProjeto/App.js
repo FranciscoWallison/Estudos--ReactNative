@@ -1,36 +1,50 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Button, Image } from 'react-native';
 
 export default class PrimeiroProjeto extends Component {
 
   constructor(props){
     super(props);
-    this.state = {inputTexto: '' ,texto:''}
+    this.state = {texto1:'Texto 1', texto2:'Texto 2'}
 
-    this.apertouBotao = this.apertouBotao.bind(this);
+    this.escrever = this.escrever.bind(this);
   }
 
-  apertouBotao(){
+  mudarVogais(texto){
+    let novoTexto = texto.toLowerCase();
+    novoTexto = novoTexto.replace(/(a|e|i|o|u)/g, 'i');
+    novoTexto = novoTexto.replace(/(á|à|â|ã)/g, 'i');
+    novoTexto = novoTexto.replace(/(é|è|ê)/g, 'i');
+    novoTexto = novoTexto.replace(/(í|ì|î)/g, 'i');
+    novoTexto = novoTexto.replace(/(ó|ò|ô)/g, 'i');
+    novoTexto = novoTexto.replace(/(ú|ù|û)/g, 'i');
+
+    return novoTexto;
+  }
+
+  escrever(t){
     let s = this.state;
-    
-    if(s.inputTexto == "Wallison"){
-      s.texto = "Acertou!"
-    }else{
-      s.texto = "Erro!"
-    }
+    s.texto1 = t;
+    s.texto2 = this.mudarVogais(t);
 
     this.setState(s);
 
   }
 
+
   render(){
     return (
-      <View style={{paddingTop:30}}>
-        <TextInput style={styles.input} placeholder="Qial seu nome?"
-          onChangeText={(inputTexto) => this.setState({inputTexto})}/>
-
-        <Button title="Aperte em mim" onPress={this.apertouBotao}/>
-        <Text style={styles.texto}>{this.state.texto}</Text>
+      <View style={styles.body}>
+        
+          <Text style={styles.titulo}>Criador de Mimimi</Text>
+          <View style={styles.inputArea}>
+            <TextInput style={styles.input} placeholder="Digite seu mimimi" onChangeText={this.escrever}/>
+          </View>
+        <View style={styles.area}>
+          <Text style={[styles.texto, styles.texto1]}>{this.state.texto1.toUpperCase()}</Text>
+          <Image style={styles.guri} source={require('./images/mimimi.jpg')}/>
+          <Text style={[styles.texto, styles.texto2]}>{this.state.texto2.toUpperCase()}</Text>
+        </View>
       </View>
 
     ); 
@@ -38,15 +52,53 @@ export default class PrimeiroProjeto extends Component {
 }
 
 const styles = StyleSheet.create({
+  body: {
+    backgroundColor: '#999999',
+    paddingTop:30,
+    flex:1,
+    flexDirection:'column',
+    alignItems: 'center'
+  },
+  titulo:{
+    fontSize: 30,
+    color:"#FFFFFF"
+  },
+  inputArea:{
+    alignSelf: 'stretch'
+  },
   input: {
-    height:40,
     borderWidth:1,
-    borderColor: '#000000',
-    margin:10,
+    borderColor: '#999999',
+    backgroundColor: '#EEEEEE',
+    color:'#000000',
+    height:40,
+    margin:20,
     padding:10
   },
-  texto: {
-    fontSize: 20,
-    textAlign: 'center'
+  area:{
+    width:300,
+    height:300,
+    marginTop:10
+  },
+  guri:{
+    width:300,
+    height:300,
+    marginTop:-70
+  },
+  texto:{
+    fontSize:25,
+    color:'#FFFFFF',
+    padding:10,
+    backgroundColor:'transparent',
+    fontWeight:'bold',
+    textAlign:'center',
+    height:70
+  },
+  texto1:{
+    zIndex:1
+  },
+  texto2:{
+    zIndex:1,
+    marginTop:-70
   }
 });

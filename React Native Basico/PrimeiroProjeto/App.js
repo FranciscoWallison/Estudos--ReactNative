@@ -1,35 +1,43 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text } from 'react-native';
 
-class Imagem extends Component {
-  render(){
+class Janta extends Component 
+{
+  constructor(props){
+    super(props);
+    this.state = {comida:props.comida};
+    var comidas = ['Pizza', 'Lasanha', 'Burger', 'Sopa', 'Arroz'];
 
-    let imagem = {
-      uri: 'https://avatars3.githubusercontent.com/u/'+this.props.nome+'?s=460&v=4'
-    }
+    setInterval(()=> {
+      this.setState(previousState => {
+        var n = Math.floor( Math.random() * comidas.length );
+        return {comida: comidas[n]};
+      });
+    }, 1000);
+
+  }
+
+  render() {   
+
     return (
-      <Image source={imagem} style={{width:parseInt(this.props.largura), height:parseInt(this.props.altura)}} />
+      <View>
+        <Text style={{textAlign:'center', fontWeight:'bold', fontSize:20, color:'red'}}>Hoje você vai jantar :</Text>
+        <Text style={{textAlign:'center', fontSize:20, }}>{this.state.comida}</Text>
+      </View>
     );
   }
 }
+
 
 export default class PrimeiroProjeto extends Component {
 
   render(){
 
-    let imagem = {
-      uri:'https://avatars3.githubusercontent.com/u/19413241?s=460&v=4' 
-    };
+    return (
+      <View style={{ paddingTop:20 }}>        
+        <Janta comida='Bolachar'/>
+      </View>
 
-   return (
-     <View>
-       <Text>Olá Mundo</Text>
-       <Text>Olá Mundo</Text>
-       <Text>Olá Mundo</Text>
-       <Text style={{fontSize:25, color:'red', margin:20}}>Olá Mundo</Text>
-       <Imagem nome='19413241' largura='250' altura='250' />      
-     </View>
-     
-   ); 
+    ); 
   }
 }

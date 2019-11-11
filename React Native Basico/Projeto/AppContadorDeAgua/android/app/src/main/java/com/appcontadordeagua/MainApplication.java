@@ -1,4 +1,4 @@
-package com.primeiroprojeto;
+package com.appcontadordeagua;
 
 import android.app.Application;
 import android.content.Context;

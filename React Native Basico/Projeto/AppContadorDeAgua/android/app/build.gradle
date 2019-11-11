@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.primeiroprojeto"
+        applicationId "com.appcontadordeagua"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

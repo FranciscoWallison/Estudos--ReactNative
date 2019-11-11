@@ -1,104 +1,124 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput, Button, Image } from 'react-native';
+import React, { Component } from 'react'
+import { 
+  View, 
+  StyleSheet,
+  ImageBackground, 
+  Text,
+  Button } 
+from 'react-native'
+
 
 export default class PrimeiroProjeto extends Component {
 
   constructor(props){
     super(props);
-    this.state = {texto1:'Texto 1', texto2:'Texto 2'}
+    this.state = {consumido:0, status:'Ruim', pct: 0};
 
-    this.escrever = this.escrever.bind(this);
+    this.addCopo = this.addCopo.bind(this);
+    this.ataualizar = this.ataualizar.bind(this);
   }
 
-  mudarVogais(texto){
-    let novoTexto = texto.toLowerCase();
-    novoTexto = novoTexto.replace(/(a|e|i|o|u)/g, 'i');
-    novoTexto = novoTexto.replace(/(á|à|â|ã)/g, 'i');
-    novoTexto = novoTexto.replace(/(é|è|ê)/g, 'i');
-    novoTexto = novoTexto.replace(/(í|ì|î)/g, 'i');
-    novoTexto = novoTexto.replace(/(ó|ò|ô)/g, 'i');
-    novoTexto = novoTexto.replace(/(ú|ù|û)/g, 'i');
-
-    return novoTexto;
-  }
-
-  escrever(t){
+  addCopo(){
     let s = this.state;
-    s.texto1 = t;
-    s.texto2 = this.mudarVogais(t);
-
+    s.consumido += 200;
     this.setState(s);
 
+    this.ataualizar();
   }
 
+  ataualizar(){
+    let s = this.state;
+    s.pct = ((s.consumido/2000)*100);
+    
+    if(s.pct >= 100){
+      s.status = "Bom"
+    }else{
+      s.status = "Ruim"
+    }
+
+    if(s.pct > 100){
+      s.pct = 0;
+      s.consumido = 0
+    }
+    this.setState(s);
+  }
 
   render(){
-    return (
+    return(
       <View style={styles.body}>
-        
-          <Text style={styles.titulo}>Criador de Mimimi</Text>
-          <View style={styles.inputArea}>
-            <TextInput style={styles.input} placeholder="Digite seu mimimi" onChangeText={this.escrever}/>
-          </View>
-        <View style={styles.area}>
-          <Text style={[styles.texto, styles.texto1]}>{this.state.texto1.toUpperCase()}</Text>
-          <Image style={styles.guri} source={require('./images/mimimi.jpg')}/>
-          <Text style={[styles.texto, styles.texto2]}>{this.state.texto2.toUpperCase()}</Text>
-        </View>
-      </View>
+          <ImageBackground source={require('./images/watherbg.jpg')}
+            style={styles.bgimage}>
+              <View>
+                <View style={styles.infoArea}>
+                  <View style={styles.area}>
+                    <Text style={styles.areaTitulo}>Meta</Text>
+                    <Text style={styles.areaDado}>2000ml</Text>                
+                  </View>
 
-    ); 
-  }
+                  <View style={styles.area}>
+                    <Text style={styles.areaTitulo}>Consumido</Text>
+                    <Text style={styles.areaDado}>{this.state.consumido}ml</Text>
+                  </View>
+
+                  <View style={styles.area}>
+                    <Text style={styles.areaTitulo}>Status</Text>
+                    <Text style={styles.areaDado}>{this.state.status}</Text>
+                  </View>
+                </View>
+
+                <View style={styles.pctArea}>
+                  <Text style={styles.pctText}>{this.state.pct}%</Text>
+                </View>
+
+                <View style={styles.btnArea}>
+                  <Button title="Beber 200ml" type="outline" onPress={this.addCopo} />
+                </View>
+
+              </View>
+
+          </ImageBackground>
+      </View>
+    )
+  } 
 }
 
 const styles = StyleSheet.create({
-  body: {
-    backgroundColor: '#999999',
-    paddingTop:30,
+  body:{
     flex:1,
-    flexDirection:'column',
-    alignItems: 'center'
+    paddingTop:0
   },
-  titulo:{
-    fontSize: 30,
-    color:"#FFFFFF"
+  bgimage:{
+    flex:1,
+    width:null
   },
-  inputArea:{
-    alignSelf: 'stretch'
-  },
-  input: {
-    borderWidth:1,
-    borderColor: '#999999',
-    backgroundColor: '#EEEEEE',
-    color:'#000000',
-    height:40,
-    margin:20,
-    padding:10
+  infoArea:{
+    flex:1,
+    flexDirection:'row',
+    marginTop:75
   },
   area:{
-    width:300,
-    height:300,
-    marginTop:10
+    flex:1,
+    alignItems:'center'
   },
-  guri:{
-    width:300,
-    height:300,
-    marginTop:-70
+  areaTitulo:{
+    color: '#45b2fc'
   },
-  texto:{
-    fontSize:25,
+  areaDado:{
+    color: '#2b4274',
+    fontSize:15,
+    fontWeight:'bold'
+  },
+  pctArea:{
+    marginTop:270,
+    alignItems:'center'
+  },
+  pctText:{
+    fontSize:80,
     color:'#FFFFFF',
-    padding:10,
-    backgroundColor:'transparent',
-    fontWeight:'bold',
-    textAlign:'center',
-    height:70
+    backgroundColor:'transparent'
   },
-  texto1:{
-    zIndex:1
-  },
-  texto2:{
-    zIndex:1,
-    marginTop:-70
+  btnArea:{
+    marginTop:30,
+    alignItems: 'center'
   }
-});
+})

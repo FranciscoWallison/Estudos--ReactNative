@@ -1,0 +1,4 @@
+#Mon Nov 11 17:33:54 GMT-03:00 2019
+base.0=C\:\\Fontes - Wallison\\estudo\\Estudos--ReactNative\\React Native Basico\\Test\\AppTesteOrientation\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

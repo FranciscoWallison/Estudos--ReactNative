@@ -9,3 +9,8 @@
 ```
 #### Trabalhando com dados exp: <select>
 * Picker
+```
+---------------------------------------------------------
+```
+#### Renderiza uma entrada booleana.
+* Switch

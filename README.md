@@ -14,3 +14,10 @@
 
 #### Renderiza uma entrada booleana.
 * Switch
+
+
+#### Comando android's
+````
+  - emulator -list-avds
+  - emulator -avd Nexus_5x_API_27
+````

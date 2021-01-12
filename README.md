@@ -5,15 +5,14 @@
 * ScrollView
 * SectionList
 
----------------------------------------------------------
 
-#### Trabalhando com dados exp: <select>
-  * Picker
 
----------------------------------------------------------
+#### Trabalhando com dados exp: `'<select>'`
+  - Picker
+
 _________________________________________________________
 #### Renderiza uma entrada booleana.
-* Switch
+ * Switch
 
 _________________________________________________________
 #### Comando android's

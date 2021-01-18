@@ -24,5 +24,17 @@ _________________________________________________________
 ````
   react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
   &&
-  cd android && ./gradlew assembleDebug
+  cd android && gradlew assembleDebug
+````
+#### Comando adb android driver
+````
+adb kill-server
+adb start-server
+adb reverse tcp:8081 tcp:8081
+
+adb usb
+````
+#### Comando gradlew exclusão do diretório de construção.
+````
+gradlew clean
 ````

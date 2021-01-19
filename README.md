@@ -20,13 +20,16 @@ _________________________________________________________
   - emulator -list-avds
   - emulator -avd Nexus_5x_API_27
 ````
+# Abra o CMD como administrador
 #### Comando gerando apk debug
 ````
-  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
-  &&
-  cd android && gradlew assembleDebug
+  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && cd android && gradlew assembleDebug
 ````
-#### Comando adb android driver
+#### Comando gerando apk Release
+````
+  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && cd android && gradlew assembleRelease
+````
+## Comando adb android driver
 ````
 adb kill-server
 adb start-server

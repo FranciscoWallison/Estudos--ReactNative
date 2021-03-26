@@ -30,11 +30,14 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && cd android && gradlew assembleRelease && cd ..
 ````
 ## Comando adb android driver
+#### Criando server
 ````
 adb kill-server
 adb start-server
 adb reverse tcp:8081 tcp:8081
-
+````
+#### Validando entradas usb's
+````
 adb usb
 ````
 #### Comando gradlew exclusão do diretório de construção.

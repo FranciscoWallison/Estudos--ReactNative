@@ -32,9 +32,7 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ## Comando adb android driver
 #### Criando server
 ````
-adb kill-server
-adb start-server
-adb reverse tcp:8081 tcp:8081
+adb kill-server && adb start-server && adb reverse tcp:8081 tcp:8081
 ````
 #### Validando entradas usb's
 ````

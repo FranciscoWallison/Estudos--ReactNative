@@ -44,6 +44,13 @@ gradlew clean
 ````
 
 ### Comandos ios
+#### ERRO IMAGE'S
+````
+ - https://github.com/facebook/react-native/issues/29279#issuecomment-658244428
+````
+
+
+#### FULL RESETE
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
 ````

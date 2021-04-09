@@ -42,3 +42,8 @@ adb usb
 ````
 gradlew clean
 ````
+
+### Comandos ios
+````
+ rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
+````

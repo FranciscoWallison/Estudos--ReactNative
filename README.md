@@ -40,7 +40,7 @@ adb usb
 ````
 #### Comando gradlew exclusão do diretório de construção.
 ````
-gradlew clean
+cd android && gradlew clean && cd ..
 ````
 
 ### Comandos ios

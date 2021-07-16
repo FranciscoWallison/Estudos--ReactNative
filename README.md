@@ -16,6 +16,9 @@ _________________________________________________________
 
 _________________________________________________________
 # Abra o CMD como administrador
+````
+- react-native run-android
+````
 #### Comando android's
 ````
   - emulator -list-avds

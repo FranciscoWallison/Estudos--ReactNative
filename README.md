@@ -16,9 +16,6 @@ _________________________________________________________
 
 _________________________________________________________
 # Abra o CMD como administrador
-````
-- react-native run-android
-````
 #### Comando android's
 ````
   - emulator -list-avds
@@ -45,7 +42,9 @@ adb usb
 ````
 cd android && gradlew clean && cd ..
 ````
-
+````
+- react-native run-android
+````
 ### Comandos ios
 #### ERRO IMAGE'S
 ````

@@ -43,7 +43,7 @@ adb usb
 cd android && gradlew clean && cd ..
 ````
 ````
-- react-native run-android
+react-native run-android
 ````
 ### Comandos ios
 #### ERRO IMAGE'S

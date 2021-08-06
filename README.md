@@ -1,19 +1,5 @@
 ## Estudos--ReactNative
-
-#### Trabalhando com lista 
-* FlatList
-* ScrollView
-* SectionList
-
-
-
-#### Trabalhando com dados exp: `'<select>'`
-  - Picker
-
-_________________________________________________________
-#### Renderiza uma entrada booleana.
- * Switch
-
+### Doc para me ajudar no dia dia 
 _________________________________________________________
 # Abra o CMD como administrador
 #### Comando android's

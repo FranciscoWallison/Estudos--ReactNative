@@ -2,7 +2,7 @@
 ### Doc para me ajudar no dia dia 
 _________________________________________________________
 # Abra o CMD como administrador
-#### Comando android's
+#### Comando para abrir o emulador android's
 ````
   - emulator -list-avds
   - emulator -avd Nexus_5x_API_27

@@ -24,7 +24,7 @@ adb kill-server && adb start-server && adb reverse tcp:8081 tcp:8081
 ````
 adb usb
 ````
-#### Comando gradlew exclusão do diretório de construção.
+#### Comando gradlew exclusão do diretório do build.
 ````
 cd android && gradlew clean && cd ..
 ````

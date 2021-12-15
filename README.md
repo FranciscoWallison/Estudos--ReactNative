@@ -42,3 +42,26 @@ react-native run-android
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
 ````
+
+
+# Add firebase 
+Documentação para estár iniciando google analytics no react-native [Doc](https://rnfirebase.io/)
+
+## Debugando
+### No console
+````
+adb shell setprop debug.firebase.analytics.app com.abc.y
+````
+#### Esse comportamento persiste até que você o desative explicitamente executando o seguinte comando:
+````
+adb shell setprop debug.firebase.analytics.app .none.
+````
+### No dispositivo
+
+#### Execute seu aplicativo no modo de depuração
+
+Vá para Opções do ````desenvolvedor```` -> ````Selecionar aplicativo de depuração```` -> ````Selecionar seu aplicativo````
+
+Você verá seu dispositivo listado no Firebase ````DebugView````
+
+

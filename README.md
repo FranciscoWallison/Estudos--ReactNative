@@ -60,7 +60,7 @@ adb shell setprop debug.firebase.analytics.app .none.
 
 #### Execute seu aplicativo no modo de depuração
 
-Vá para Opções do ````desenvolvedor```` -> ````Selecionar aplicativo de depuração```` -> ````Selecionar seu aplicativo````
+Vá para Opções do ````desenvolvedor```` -> ````Selecionar aplicativo de depuração```` -> ````Selecione seu aplicativo````
 
 Você verá seu dispositivo listado no Firebase ````DebugView````
 

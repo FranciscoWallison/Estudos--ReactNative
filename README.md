@@ -50,7 +50,7 @@ Em ```Port forwarding setting```  adicione em ```Port``` uma porta para o acesso
 
 <img src="https://github.com/FranciscoWallison/Estudos--ReactNative/blob/master/doc/ex1.png" width="250" />
 
-Em ```Target discovery setting``` tem coloca ```localhost:<PORTA>```, em <PORTA> tem que ser a porta colocada em ```Port``` no ```Port forwarding setting```
+Em ```Target discovery setting``` tem colocar ```localhost:<PORTA>```, em <PORTA> tem que ser a porta colocada em ```Port``` no ```Port forwarding setting```
   
 <img src="https://github.com/FranciscoWallison/Estudos--ReactNative/blob/master/doc/ex2.png" width="250" />
 

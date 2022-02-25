@@ -42,8 +42,22 @@ react-native run-android
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
 ````
+_____________________________________________________________________
+# Criando ponte entre api e o app
 
-chrome://inspect/#devices
+#### No chome entre no link [chrome://inspect/#devices](chrome://inspect/#devices)
+Em ```Port forwarding setting```  adicione em ```Port``` uma porta para o acesso no app e em ```IP address and port ``` a url local da sua API.
+
+<img src="https://github.com/FranciscoWallison/Estudos--ReactNative/blob/master/doc/ex1.png" width="250" />
+
+Em ```Target discovery setting``` tem coloca ```localhost:<PORTA>```, em <PORTA> tem que ser a porta colocada em ```Port``` no ```Port forwarding setting```
+  
+<img src="https://github.com/FranciscoWallison/Estudos--ReactNative/blob/master/doc/ex2.png" width="250" />
+
+Em laranja é a url da sua API local na sua maquina e em vermelho é por onde o seu app irar acessar.
+
+  <img src="https://github.com/FranciscoWallison/Estudos--ReactNative/blob/master/doc/ex3.png" width="250" />
+_____________________________________________________________________
 
 # Add firebase 
 Documentação para estár iniciando google analytics no react-native [Doc](https://rnfirebase.io/)

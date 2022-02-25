@@ -43,6 +43,7 @@ react-native run-android
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
 ````
 
+chrome://inspect/#devices
 
 # Add firebase 
 Documentação para estár iniciando google analytics no react-native [Doc](https://rnfirebase.io/)

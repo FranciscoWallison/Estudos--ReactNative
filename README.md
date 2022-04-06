@@ -24,10 +24,11 @@ adb kill-server && adb start-server && adb reverse tcp:8081 tcp:8081
 ````
 adb usb
 ````
-#### Comando gradlew exclusão do diretório do build.
+#### Comando para gradlew exclusão do diretório do build.
 ````
 cd android && gradlew clean && cd ..
 ````
+#### Comando start project
 ````
 react-native run-android
 ````

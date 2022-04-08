@@ -15,6 +15,11 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ````
 cd android && gradlew assembleRelease && cd ..
 ````
+````
+cd android && gradlew bundleRelease && cd ..
+````
+
+./gradlew bundleRelease
 ## Comando adb android driver
 #### Criando server
 ````

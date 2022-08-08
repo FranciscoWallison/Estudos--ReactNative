@@ -22,6 +22,19 @@ cd android && gradlew assembleRelease && cd ..
 ````
 cd android && gradlew bundleRelease && cd ..
 ````
+
+<details><summary><b>Certo e errado</b></summary>
+<p>
+
+ Ele pode gerar um erro gigante falando das pastas
+ ````
+ android\app\src\main\res
+ ````
+ Delete as pasta com o inicio do nome em ```drawable``` e por ultimo a ```raw```
+ 
+</p>
+</details>
+
 ## Comando adb android driver
 #### Criando server
 ````

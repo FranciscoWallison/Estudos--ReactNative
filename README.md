@@ -23,7 +23,7 @@ cd android && gradlew assembleRelease && cd ..
 cd android && gradlew bundleRelease && cd ..
 ````
 
-<details><summary><b>Erros</b></summary>
+<details><summary><b>Possiveis Erros</b></summary>
 <p>
 
  Ele pode gerar um erro gigante falando das pastas

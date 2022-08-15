@@ -34,6 +34,7 @@ cd android && gradlew bundleRelease && cd ..
  
 </p>
 </details>
+----------------------------------------------------------------------------------------------------------------
 
 ## Comando adb android driver
 #### Criando server

@@ -67,7 +67,7 @@ react-native run-android
 _____________________________________________________________________
 # Criando ponte entre api e o app
 
-#### No chome entre no link pelo navegador chrome://inspect/#devices
+#### No chome entre no link pelo navegador ```chrome://inspect/#devices```
 
 Em ```Port forwarding setting```  adicione em ```Port``` uma porta para o acesso no app e em ```IP address and port ``` a url local da sua API.
 

@@ -81,7 +81,7 @@ Em laranja é a url da sua API local na sua maquina e em vermelho é por onde o 
 
  <img src="https://github.com/FranciscoWallison/Estudos--ReactNative/blob/master/doc/ex3.png" width="250" />
  
- Tem que está marcado ```Enable port forwarding```
+ Tem que está marcado ```Enable port forwarding``` para que as configurações funcionam.
  
  <img src="https://user-images.githubusercontent.com/19413241/200612787-1f28661b-e363-4fde-9a44-74b0e4c6e183.png" width="250" />
 

@@ -34,6 +34,13 @@ cd android && gradlew bundleRelease && cd ..
  
 </p>
 </details>
+
+<details><summary><b>Comando de auxilio para teste</b></summary>
+<p>
+adb shell input text <seu_texto>
+</p>
+</details>
+
 _________________________________________________________
 
 ## Comando adb android driver

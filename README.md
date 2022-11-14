@@ -37,7 +37,11 @@ cd android && gradlew bundleRelease && cd ..
 
 <details><summary><b>Comando de auxilio para teste</b></summary>
 <p>
-adb shell input text <seu_texto>
+
+````
+adb shell input text 'seu_texto'
+````
+
 </p>
 </details>
 

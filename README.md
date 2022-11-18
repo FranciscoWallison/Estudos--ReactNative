@@ -7,7 +7,7 @@ _________________________________________________________
 emulator -list-avds
 ````
 ````
- emulator -avd Nexus_5x_API_27
+emulator -avd Nexus_5x_API_27
 ````
 #### Comando gerando apk debug
 ````

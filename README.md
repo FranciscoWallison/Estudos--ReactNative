@@ -60,6 +60,11 @@ adb usb
 ````
 cd android && gradlew clean && cd ..
 ````
+#### Comando para IOS exclusão do diretório do build.
+````
+ cd ios && pod clean && cd ..
+````
+
 #### Comando start project
 ````
 react-native run-android
@@ -71,7 +76,12 @@ react-native run-android
 ````
 
 
-#### FULL RESETE
+#### FULL RESETE IOS
+````
+ rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd android && gradlew clean && cd ..
+````
+
+#### FULL RESETE IOS
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
 ````

@@ -76,14 +76,14 @@ react-native run-android
 ````
 
 
-#### FULL RESETE IOS
+#### FULL RESETE ANDROID
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd android && gradlew clean && cd ..
 ````
 
 #### FULL RESETE IOS
 ````
- rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install && cd ..
+ rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install --repo-update && cd ..
 ````
 _____________________________________________________________________
 # Criando ponte entre api e o app

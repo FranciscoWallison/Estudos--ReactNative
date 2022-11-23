@@ -56,35 +56,40 @@ adb kill-server && adb start-server && adb reverse tcp:8081 tcp:8081
 ````
 adb usb
 ````
-#### Comando para gradlew exclusão do diretório do build.
-````
-cd android && gradlew clean && cd ..
-````
-#### Comando para IOS exclusão do diretório do build.
-````
- cd ios && pod clean && cd ..
-````
 
 #### Comando start project
 ````
 react-native run-android
 ````
-### Comandos ios
-#### ERRO IMAGE'S
-````
- - https://github.com/facebook/react-native/issues/29279#issuecomment-658244428
-````
 
+### Comandos android
+
+#### Comando para gradlew exclusão do diretório do build.
+````
+cd android && gradlew clean && cd ..
+````
 
 #### FULL RESETE ANDROID
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd android && gradlew clean && cd ..
 ````
 
+### Comandos ios
+#### ERRO IMAGE'S
+````
+ - https://github.com/facebook/react-native/issues/29279#issuecomment-658244428
+````
+
 #### FULL RESETE IOS
 ````
  rm -rf node_modules/ && rm -rf package.lock.json && yarn install && cd ios && pod clean && pod install --repo-update && cd ..
 ````
+
+#### Comando para IOS exclusão do diretório do build.
+````
+ cd ios && pod clean && cd ..
+````
+
 _____________________________________________________________________
 # Criando ponte entre api e o app
 

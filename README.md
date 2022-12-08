@@ -1,5 +1,5 @@
 ## Estudos--ReactNative
-### Doc para me ajudar no dia dia 
+### Comandos para me ajudar no dia dia 
 _________________________________________________________
 # Abra o CMD como administrador
 #### Comando para abrir o emulador android's

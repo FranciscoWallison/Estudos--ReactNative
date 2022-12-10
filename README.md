@@ -132,7 +132,7 @@ Você verá seu dispositivo listado no Firebase ````DebugView````
 
 #### ERRO IMAGE'S
 ````
- - https://github.com/facebook/react-native/issues/29279#issuecomment-658244428
+https://github.com/facebook/react-native/issues/29279#issuecomment-658244428
 ````
 
 

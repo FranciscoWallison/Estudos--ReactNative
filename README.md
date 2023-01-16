@@ -82,7 +82,7 @@ cd android && gradlew clean && cd ..
 
 #### Comando para IOS exclusão do diretório do build.
 ````
- cd ios && pod clean && cd ..
+ cd ios && pod clean && pod install  && cd ..
 ````
 
 _____________________________________________________________________

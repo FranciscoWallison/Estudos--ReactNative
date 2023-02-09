@@ -3,11 +3,13 @@
 _________________________________________________________
 # Abra o CMD como administrador
 #### Comando para abrir o emulador android's
+- Retornar a lista dos emuladores da sua maquina.
 ````
 emulator -list-avds
 ````
+- Escolha o emulador de sua preferencia 
 ````
-emulator -avd Nexus_5x_API_27
+emulator -avd <EMULADOR>
 ````
 #### Comando gerando apk debug
 ````

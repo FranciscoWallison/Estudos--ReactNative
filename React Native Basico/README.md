@@ -9,3 +9,5 @@ npx react-native init meuApp
 ````
 npx react-native run-android
 ````
+
+### Exemplos praticos com [react native](https://expo.dev/accounts/chicowall/snacks)

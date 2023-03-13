@@ -87,6 +87,7 @@ cd android && gradlew clean && cd ..
  cd ios && pod clean && pod install && cd ..
 ````
 
+
 _____________________________________________________________________
 # Criando ponte entre api e o app
 

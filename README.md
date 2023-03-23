@@ -20,6 +20,11 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ````
 cd android && gradlew assembleRelease && cd ..
 ````
+ou
+````
+cd android && ./gradlew app:assembleRelease  && cd ..
+````
+
 .AAB
 ````
 cd android && gradlew bundleRelease && cd ..

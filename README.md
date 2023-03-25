@@ -114,8 +114,6 @@ Em laranja é a url da sua API local na sua maquina e em vermelho é por onde o 
  
  <img src="https://user-images.githubusercontent.com/19413241/200612787-1f28661b-e363-4fde-9a44-74b0e4c6e183.png" width="250" />
 
-
-
 _____________________________________________________________________
  
 <details><summary><b>Add firebase</b></summary>

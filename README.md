@@ -20,7 +20,7 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 ````
 cd android && gradlew assembleRelease && cd ..
 ````
-ou
+ou MEC e LINUX
 ````
 cd android && ./gradlew app:assembleRelease  && cd ..
 ````

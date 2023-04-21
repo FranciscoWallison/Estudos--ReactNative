@@ -1,5 +1,7 @@
 ## Estudos--ReactNative
 ### Comandos para me ajudar no dia dia 
+
+javascript, react e mobile 
 _________________________________________________________
 # Abra o CMD como administrador
 #### Comando para abrir o emulador android's

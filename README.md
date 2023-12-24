@@ -41,6 +41,15 @@ cd android && gradlew bundleRelease && cd ..
  ````
  Delete as pasta com o inicio do nome em ```drawable``` e por ultimo a ```raw```
  
+
+INSTALL_FAILED_VERSION_DOWNGRADE
+
+ ````
+O erro  INSTALL_FAILED_VERSION_DOWNGRADE
+ocorre quando você está tentando instalar 
+um aplicativo no dispositivo ou emulador Android, 
+mas a versão do aplicativo no dispositivo é superior à versão que você está tentando instalar. 
+ ````
 </p>
 </details>
 

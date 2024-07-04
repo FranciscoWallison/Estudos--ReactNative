@@ -102,6 +102,11 @@ cd android && gradlew clean && cd ..
 ````
  cd ios && pod clean && pod install && cd ..
 ````
+
+````
+cd android && gradlew.bat app:installDebug -PreactNativeDevServerPort=8081
+````
+
 _____________________________________________________________________
 # Criando ponte entre api e o app
 

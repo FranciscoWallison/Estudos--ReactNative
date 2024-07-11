@@ -13,6 +13,12 @@ emulator -list-avds
 ````
 emulator -avd <EMULADOR>
 ````
+### Iniciando projeto
+````
+npx react-native init osdentista --pm npm
+````
+
+
 #### Comando gerando apk debug
 ````
 react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && cd android && gradlew assembleDebug && cd ..

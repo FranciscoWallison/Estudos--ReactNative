@@ -139,6 +139,8 @@ _____________________________________________________________________
 Documentação para estár iniciando google analytics no react-native [Doc](https://rnfirebase.io/)
 </details>
  
+[Pipe para firebase](https://firebase.google.com/docs/app-distribution/ios/distribute-cli?hl=pt-br)
+
 ## Debugando
 ### No console
 ````

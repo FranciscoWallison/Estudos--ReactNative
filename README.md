@@ -64,6 +64,7 @@ mas a versão do aplicativo no dispositivo é superior à versão que você est�
 ````
 adb shell input text 'seu_texto'
 ````
+
 </p>
 </details>
 
@@ -78,6 +79,10 @@ adb kill-server && adb start-server && adb reverse tcp:8081 tcp:8081
 ````
 adb usb
 ````
+### Comando para ver os log's
+```
+adb logcat *:S ReactNative:V ReactNativeJS:V AndroidRuntime:E
+```
 
 #### Comando start project
 ````

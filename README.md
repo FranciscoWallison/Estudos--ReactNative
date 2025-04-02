@@ -11,7 +11,10 @@ emulator -list-avds
 ````
 - Escolha o emulador de sua preferencia 
 ````
-emulator -avd <EMULADOR>
+emulator -avd 
+ou
+emulator -avd <EMULADOR> -gpu swiftshader_indirect
+
 ````
 ### Iniciando projeto
 ````

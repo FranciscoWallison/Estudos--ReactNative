@@ -119,6 +119,12 @@ cd android && gradlew clean && cd ..
 cd android && gradlew.bat app:installDebug -PreactNativeDevServerPort=8081
 ````
 
+
+### Gerar diff para pacotes legados
+```
+npx patch-package @react-native-community/datetimepicker
+```
+
 _____________________________________________________________________
 # Criando ponte entre api e o app
 

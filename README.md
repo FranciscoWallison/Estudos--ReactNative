@@ -119,6 +119,9 @@ cd android && gradlew clean && cd ..
 cd android && gradlew.bat app:installDebug -PreactNativeDevServerPort=8081
 ````
 
+```
+iOS sempre que rodar um pod install , lembre-se sempre de rodar um deintegrate antes.
+```
 
 ### Gerar diff para pacotes legados
 ```

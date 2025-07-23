@@ -149,6 +149,42 @@ Em laranja é a url da sua API local na sua maquina e em vermelho é por onde o 
  
  <img src="https://user-images.githubusercontent.com/19413241/200612787-1f28661b-e363-4fde-9a44-74b0e4c6e183.png" width="250" />
 
+-----
+
+
+# caddy
+
+```
+caddy run --config D:\Caddyfile\Caddyfile
+```
+
+```
+:58889 {
+    log  # opcional: exibe cada request no console
+
+    reverse_proxy https://api-osdentista-teste.odontosystem.com.br {
+        # garante que o Host seja o do domínio real
+        header_up Host api-osdentista-teste.odontosystem.com.br
+
+        # caso o cert seja auto-assinado ou interno
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
+}
+
+:52714 {
+    log
+
+    reverse_proxy https://api-orcamento-teste.odontosystem.com.br {
+        header_up Host api-orcamento-teste.odontosystem.com.br
+
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
+}
+```
 _____________________________________________________________________
  
 <details><summary><b>Add firebase</b></summary>

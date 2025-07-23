@@ -162,7 +162,7 @@ caddy run --config D:\Caddyfile\Caddyfile
 :58889 {
     log  # opcional: exibe cada request no console
 
-    reverse_proxy https://api-osdentista-teste.odontosystem.com.br {
+    reverse_proxy https://api-dentista-teste.com.br {
         # garante que o Host seja o do domínio real
         header_up Host api-osdentista-teste.odontosystem.com.br
 
@@ -176,7 +176,7 @@ caddy run --config D:\Caddyfile\Caddyfile
 :52714 {
     log
 
-    reverse_proxy https://api-orcamento-teste.odontosystem.com.br {
+    reverse_proxy https://api-orcamento-teste.com.br {
         header_up Host api-orcamento-teste.odontosystem.com.br
 
         transport http {

@@ -68,6 +68,15 @@ mas a versão do aplicativo no dispositivo é superior à versão que você est�
 adb shell input text 'seu_texto'
 ````
 
+Opção 1 – Desinstalar a versão antiga antes de instalar
+
+Execute no terminal:
+
+```bash
+adb uninstall nomedoApp.com.br.appnome
+```
+
+
 </p>
 </details>
 

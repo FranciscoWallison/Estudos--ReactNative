@@ -3,11 +3,9 @@
 
 javascript, react e mobile 
 _________________________________________________________
-Aqui vai, direto e corrigido:
+## Abra o CMD como administrador
 
-# Abra o CMD como administrador
-
-## Comandos para usar o emulador Android
+### Comandos para usar o emulador Android
 
 * Listar os emuladores (AVDs) disponíveis:
 
